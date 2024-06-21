@@ -7,11 +7,11 @@ import fragmentShader from './Shaders/fragment.glsl';
 import vertexShader from './Shaders/vertex.glsl';
 
 const SphereMat = shaderMaterial(
-  {
-    uTime: 0
-  },
-  vertexShader,
-  fragmentShader,
+    {
+        uTime: 0
+    },
+    vertexShader,
+    fragmentShader
 );
 
 // declaratively
@@ -19,11 +19,7 @@ extend({ SphereMat });
 // This is the 🔑 that HMR will renew if this file is edited
 SphereMat.key = THREE.MathUtils.generateUUID();
 
-
-
 const Sphere = () => {
-
-    
     const ref = useRef();
 
     useFrame((state) => {
@@ -36,7 +32,7 @@ const Sphere = () => {
         <group>
             <mesh>
                 <sphereGeometry args={[1, 512, 512]} />
-                <sphereMat ref={ref} key={SphereMat.key}/>
+                <sphereMat ref={ref} key={SphereMat.key} />
             </mesh>
         </group>
     );

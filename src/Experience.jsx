@@ -8,7 +8,7 @@ const Experience = () => {
     return (
         <>
             <Canvas>
-            <color attach="background" args={['#111111']} />
+                <color attach="background" args={['#111111']} />
                 <Perf position={'top-left'} />
                 <CameraControls />
                 <ambientLight intensity={1} />
