@@ -7,12 +7,14 @@ import Sphere from './sphere/Sphere';
 const Experience = () => {
     return (
         <>
-            <Canvas>
+            <Canvas camera={{
+                fov: 25,
+                position: [0, 0, 7]
+            
+            }}>
                 <color attach="background" args={['#111111']} />
                 <Perf position={'top-left'} />
                 <CameraControls />
-                <ambientLight intensity={1} />
-                <directionalLight position={[5, 5, 5]} />
                 <Sphere />
             </Canvas>
         </>

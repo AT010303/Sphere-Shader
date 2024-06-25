@@ -38,8 +38,8 @@ const Sphere = () => {
         DistortionFrequency: { value: 2.0, min: 0.0, max: 10.0 },
         DistortionStrength: { value: 1.0, min: 0.0, max: 10.0 },
         DisplacementFrequency: { value: 2.0, min: 0.0, max: 10.0 },
-        DisplacementStrength: { value: 0.2, min: 0.0, max: 10.0 },
-        TimeFrequency: { value: 0.1, min: 0.0, max: 1.0 }
+        DisplacementStrength: { value: 0.2, min: 0.0, max: 3.0, step: 0.1 },
+        TimeFrequency: { value: 0.1, min: 0.0, max: 1.0, step: 0.01 }
     });
 
     return (
