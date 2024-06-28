@@ -8,7 +8,8 @@ import Experience from './Experience';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Experience />
         <Leva />
+        <Experience />
+        
     </React.StrictMode>
 );
